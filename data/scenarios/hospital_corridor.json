@@ -1,0 +1,37 @@
+{
+  "scenario_name": "Hospital Corridor Emergency Medical Routing",
+  "description": "Critical medical drone transport delivering organs and urgent blood units under strict acoustic ground noise constraints and prioritized flight clearance.",
+  "drones_count": 25,
+  "planner_mode": "priority_astar",
+  "duration_sec": 200.0,
+  "time_step_sec": 0.5,
+  "weather": {
+    "enabled": true,
+    "base_wind_speed_ms": 3.0,
+    "base_wind_dir_deg": 0.0,
+    "gust_amplitude_ms": 1.5,
+    "gust_period_sec": 15.0
+  },
+  "static_no_fly_zones": [
+    {
+      "id": "NFZ-METRO-TRAUMA",
+      "min_x": 400.0,
+      "min_y": 300.0,
+      "max_x": 600.0,
+      "max_y": 450.0,
+      "min_z": 0.0,
+      "max_z": 120.0,
+      "reason": "Metropolitan Trauma Center LifeFlight Approach"
+    }
+  ],
+  "moving_obstacles": [
+    {
+      "id": "MEDIVAC-HELI-101",
+      "x": 300.0,
+      "y": 250.0,
+      "vx": 14.0,
+      "vy": 8.0,
+      "r": 40.0
+    }
+  ]
+}

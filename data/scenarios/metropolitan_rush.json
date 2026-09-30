@@ -1,0 +1,55 @@
+{
+  "scenario_name": "Metropolitan Rush Hour Airspace",
+  "description": "Standard 30-drone delivery swarm operating through dense commercial downtown corridors with active LifeFlight helicopter and static trauma center no-fly zones.",
+  "drones_count": 30,
+  "planner_mode": "orca",
+  "duration_sec": 240.0,
+  "time_step_sec": 0.5,
+  "weather": {
+    "enabled": true,
+    "base_wind_speed_ms": 5.2,
+    "base_wind_dir_deg": 45.0,
+    "gust_amplitude_ms": 3.5,
+    "gust_period_sec": 10.0
+  },
+  "static_no_fly_zones": [
+    {
+      "id": "NFZ-METRO-TRAUMA",
+      "min_x": 400.0,
+      "min_y": 300.0,
+      "max_x": 600.0,
+      "max_y": 450.0,
+      "min_z": 0.0,
+      "max_z": 120.0,
+      "reason": "Metropolitan Trauma Center LifeFlight Approach"
+    },
+    {
+      "id": "NFZ-CIVIC-SQUARE",
+      "min_x": 1300.0,
+      "min_y": 750.0,
+      "max_x": 1550.0,
+      "max_y": 950.0,
+      "min_z": 0.0,
+      "max_z": 150.0,
+      "reason": "Civic Center & Municipal Court Airspace"
+    }
+  ],
+  "moving_obstacles": [
+    {
+      "id": "MEDIVAC-HELI-101",
+      "x": 300.0,
+      "y": 250.0,
+      "vx": 16.0,
+      "vy": 9.0,
+      "r": 45.0
+    },
+    {
+      "id": "POLICE-PATROL-204",
+      "x": 1500.0,
+      "y": 1000.0,
+      "vx": -12.0,
+      "vy": -14.0,
+      "r": 45.0
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "generator": "SkyGrid Urban Mapping System",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-TOWER-01",
+        "building": "commercial",
+        "height": 85.0,
+        "name": "Skyline Financial Center"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-122.41940, 37.77490],
+            [-122.41760, 37.77490],
+            [-122.41760, 37.77625],
+            [-122.41940, 37.77625],
+            [-122.41940, 37.77490]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BLD-TOWER-02",
+        "building": "residential",
+        "height": 55.0,
+        "name": "Midtown Residential Plaza"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-122.41580, 37.77490],
+            [-122.41400, 37.77490],
+            [-122.41400, 37.77625],
+            [-122.41580, 37.77625],
+            [-122.41580, 37.77490]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "NFZ-HOSP-01",
+        "amenity": "hospital",
+        "aeroway": "helipad",
+        "name": "Metropolitan Medical Center Heliport"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-122.41580, 37.77760],
+            [-122.41400, 37.77760],
+            [-122.41400, 37.77895],
+            [-122.41580, 37.77895],
+            [-122.41580, 37.77760]
+          ]
+        ]
+      }
+    }
+  ]
+}

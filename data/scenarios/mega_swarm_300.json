@@ -1,0 +1,55 @@
+{
+  "scenario_name": "Mega Swarm 300 Decentralized Stress Test",
+  "description": "High-density stress benchmark testing 300 autonomous delivery drones executing peer-to-peer V2V decentralized collision avoidance with convective storm cell disturbances.",
+  "drones_count": 300,
+  "planner_mode": "decentralized",
+  "duration_sec": 300.0,
+  "time_step_sec": 0.5,
+  "weather": {
+    "enabled": true,
+    "base_wind_speed_ms": 7.0,
+    "base_wind_dir_deg": 90.0,
+    "gust_amplitude_ms": 4.5,
+    "gust_period_sec": 8.0
+  },
+  "static_no_fly_zones": [
+    {
+      "id": "NFZ-METRO-TRAUMA",
+      "min_x": 400.0,
+      "min_y": 300.0,
+      "max_x": 600.0,
+      "max_y": 450.0,
+      "min_z": 0.0,
+      "max_z": 120.0,
+      "reason": "Metropolitan Trauma Center LifeFlight Approach"
+    },
+    {
+      "id": "NFZ-CIVIC-SQUARE",
+      "min_x": 1300.0,
+      "min_y": 750.0,
+      "max_x": 1550.0,
+      "max_y": 950.0,
+      "min_z": 0.0,
+      "max_z": 150.0,
+      "reason": "Civic Center & Municipal Court Airspace"
+    }
+  ],
+  "moving_obstacles": [
+    {
+      "id": "MEDIVAC-HELI-101",
+      "x": 300.0,
+      "y": 250.0,
+      "vx": 18.0,
+      "vy": 12.0,
+      "r": 50.0
+    },
+    {
+      "id": "POLICE-PATROL-204",
+      "x": 1500.0,
+      "y": 1000.0,
+      "vx": -15.0,
+      "vy": -16.0,
+      "r": 50.0
+    }
+  ]
+}
